@@ -25,6 +25,14 @@ Code below is divided as follows:
   - Data from head map is converted into a numpy array.
   - Each topographic headmap for each waveband is combined to create a 5 channel tensor of size 32x32x5
   - Data is then saved. File path to save the resulting data will need to be specified
+  - A folder is created for each time slice applied (0.5, 1.0, 1.5 & 2 seconds). 
 
-## Training the VAE 
+## Training the VAE - Work in progress
+After applying the preprocessing pipeline. I will be feeding the data into a VAE model to try and replicate the results obtained in the referenced paper. The VAE model used [2] was adapted from the github repo "VAE_Reconstruction_Classification"
+
+## References 
+[1] “Examining the Size of the Latent Space of Convolutional Variational Autoencoders Trained With Spectral Topographic Maps of EEG Frequency Bands”, TAUFIQUE AHMED, LUCA LONGO
+
+[2] "VAE_Reconstruction_Classification" (https://github.com/inDSweTrust/VAE_Reconstruction_Classification)
+
 
